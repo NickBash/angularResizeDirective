@@ -1,0 +1,20 @@
+<div
+  class="block"
+  appResize
+  cdkDrag
+  [cdkDragFreeDragPosition]="dragPosition"
+  [disabledResize]="disableResize"
+  [minWidthResize]="80"
+  [maxWidthResize]="500"
+  [minHeightResize]="100"
+  [maxHeightResize]="500"
+  [style.width.px]="size.width"
+  [style.height.px]="size.height"
+  (onChangePosition)="changePositionCard($event)"
+  (onChangeSize)="changePositionSize($event)"
+>
+  <div class="header" cdkDragHandle></div>
+  <div class="content">
+    <button type="button" (click)="toggle()">Toggle resizable</button>
+  </div>
+</div>

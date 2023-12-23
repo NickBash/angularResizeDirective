@@ -1,0 +1,22 @@
+.block {
+  width: 300px;
+  height: 200px;
+  background: green;
+  resize: both;
+
+  display: grid;
+  grid-template-rows: 30px 1fr;
+}
+
+.header {
+  height: 100%;
+  width: 100%;
+  background: blanchedalmond;
+  cursor: move;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
